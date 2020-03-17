@@ -1,57 +1,57 @@
 package com.example.bmicalculator;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.view.MenuItem;
 
-import com.example.bmicalculator.R;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    EditText waga, wzrost;
-    TextView wynik;
-    String obliczenia, wynikBMI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        waga = findViewById(R.id.waga);
-        wzrost = findViewById(R.id.wzrost);
-        wynik = findViewById(R.id.wynik);
-    }
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setOnNavigationItemSelectedListener(navigationListener);
 
-    public void obliczBMI(View view) {
-        String S1 = waga.getText().toString();
-        String S2 = wzrost.getText().toString();
-
-        float wagaValue = Float.parseFloat(S1);
-        float wzrostValue = Float.parseFloat(S2) / 100;
-
-        float bmi = wagaValue / (wzrostValue * wzrostValue);
-
-        if(bmi < 16){
-            wynikBMI = "Wygłodzenie";
-        }else if(bmi >= 16 && bmi < 17){
-            wynikBMI = "Wychudzenie";
-        }else if(bmi >= 17 && bmi < 18.5){
-            wynikBMI = "Niedowaga";
-        }else if(bmi >= 18.5 && bmi < 25){
-            wynikBMI = "Waga prawidłowa";
-        }else if(bmi >= 25 && bmi < 30){
-            wynikBMI = "Nadwaga";
-        }else if(bmi >= 30 && bmi < 35){
-            wynikBMI = "Otyłość I stopnia";
-        }else if(bmi >= 35 && bmi < 40){
-            wynikBMI = "Otyłość II stopnia";
-        }else{
-            wynikBMI = "Otyłość III stopnia";
+        //I added this if statement to keep the selected fragment when rotating the device
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new StartFragment()).commit();
         }
-
-        obliczenia = "Wynik:\n\n" + bmi + "\n" + wynikBMI;
-
-        wynik.setText(obliczenia);
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener navigationListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    Fragment selectedFragment = null;
+
+                    switch (item.getItemId()) {
+                        case R.id.startNav:
+                            selectedFragment = new StartFragment();
+                            break;
+                        case R.id.bmiNav:
+                            selectedFragment = new BmiFragment();
+                            break;
+                        case R.id.caloriesNav:
+                            selectedFragment = new CaloriesFragment();
+                            break;
+                        case R.id.foodNav:
+                            selectedFragment = new FoodFragment();
+                            break;
+                    }
+
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                            selectedFragment).commit();
+
+                    return true;
+                }
+            };
+
 }

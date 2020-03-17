@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bmicalculator.MainActivity">
+
+    <item
+        android:id="@+id/startNav"
+        android:icon="@drawable/ic_start_black_24dp"
+        android:title="@string/navStart" />
+
+    <item
+        android:id="@+id/bmiNav"
+        android:icon="@drawable/ic_bmi_black_24dp"
+        android:title="@string/navBmi" />
+
+    <item
+        android:id="@+id/caloriesNav"
+        android:icon="@drawable/ic_calories_black_24dp"
+        android:title="@string/navKalorie" />
+    <item
+        android:id="@+id/foodNav"
+        android:icon="@drawable/ic_food_black_24dp"
+        android:title="@string/navPrzepis"/>
+
+</menu>

@@ -1,8 +1,19 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
-    <string name="action_settings">Settings</string>
-    <string name="sprawd_swoje_bmi">Sprawdź swoje BMI</string>
-    <string name="waga">Waga</string>
-    <string name="wzrost">Wzrost</string>
-    <string name="oblicz">Oblicz</string>
+<string name="app_name">Kalkulator BMI</string>
+
+<string name="waga">Waga</string>
+<string name="wzrost">Wzrost</string>
+<string name="oblicz">Oblicz BMI</string>
+<string name="wynik">Wynik</string>
+<string name="hintWaga">Twoja waga</string>
+<string name="hintWzrost">Twój wzrost</string>
+
+<string name="fragStart">Witaj w mojej apce!!!</string>
+<string name="fragKalorie">Kalorie</string>
+<string name="fragPrzepis">Przepis</string>
+
+<string name="navStart">Start</string>
+<string name="navBmi">BMI</string>
+<string name="navKalorie">Kalorie</string>
+<string name="navPrzepis">Przepis</string>
 </resources>
