@@ -54,21 +54,21 @@ public class BmiFragment extends Fragment {
 
         String wynikBMI;
 
-        if(bmi < 16){
+        if(bmi < 16) {
             wynikBMI = "Wygłodzenie";
-        }else if(bmi >= 16 && bmi < 17){
+        } else if(bmi >= 16 && bmi < 17) {
             wynikBMI = "Wychudzenie";
-        }else if(bmi >= 17 && bmi < 18.5){
+        } else if(bmi >= 17 && bmi < 18.5) {
             wynikBMI = "Niedowaga";
-        }else if(bmi >= 18.5 && bmi < 25){
+        } else if(bmi >= 18.5 && bmi < 25) {
             wynikBMI = "Waga prawidłowa";
-        }else if(bmi >= 25 && bmi < 30){
+        } else if(bmi >= 25 && bmi < 30) {
             wynikBMI = "Nadwaga";
-        }else if(bmi >= 30 && bmi < 35){
+        } else if(bmi >= 30 && bmi < 35) {
             wynikBMI = "Otyłość I stopnia";
-        }else if(bmi >= 35 && bmi < 40){
+        } else if(bmi >= 35 && bmi < 40) {
             wynikBMI = "Otyłość II stopnia";
-        }else{
+        } else {
             wynikBMI = "Otyłość III stopnia";
         }
 

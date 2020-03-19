@@ -1,12 +1,24 @@
 <resources>
 <string name="app_name">Kalkulator BMI</string>
 
+<string name="tytulBmi">Kalkulator BMI</string>
+<string name="tytulCalories">Dzienne zapotrzebowanie kaloryczne</string>
 <string name="waga">Waga</string>
 <string name="wzrost">Wzrost</string>
-<string name="oblicz">Oblicz BMI</string>
+<string name="wiek">Wiek</string>
+<string name="plec">Płeć</string>
+<string name="plecK">Kobieta</string>
+<string-array name="plecList">
+    <item>Kobieta</item>
+    <item>Mężczyzna</item>
+</string-array>
+<string name="obliczBmi">Oblicz BMI</string>
+<string name="obliczCalories">Oblicz PPM</string>
 <string name="wynik">Wynik</string>
 <string name="hintWaga">Twoja waga</string>
 <string name="hintWzrost">Twój wzrost</string>
+<string name="hintWiek">Twój wiek</string>
+
 
 <string name="fragStart">Witaj w mojej apce!!!</string>
 <string name="fragKalorie">Kalorie</string>
