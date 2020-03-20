@@ -20,12 +20,12 @@ public class BmiFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_bmi, container, false);
+        View view = inflater.inflate(R.layout.fragment_bmi, container, false);
 
-        waga = rootView.findViewById(R.id.waga);
-        wzrost = rootView.findViewById(R.id.wzrost);
-        wynik = rootView.findViewById(R.id.wynik);
-        Button oblicz = rootView.findViewById(R.id.oblicz);
+        waga = view.findViewById(R.id.waga);
+        wzrost = view.findViewById(R.id.wzrost);
+        wynik = view.findViewById(R.id.wynik);
+        Button oblicz = view.findViewById(R.id.oblicz);
 
         oblicz.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +33,7 @@ public class BmiFragment extends Fragment {
                 obliczBMI();
             }
         });
-        return rootView;
+        return view;
     }
 
     private void obliczBMI() {
