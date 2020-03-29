@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -18,49 +19,74 @@
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/gofry"
+    <EditText
+        android:id="@+id/bmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="28dp"
-        android:text="@string/gofry"
-        android:textSize="25sp"
+        android:layout_marginTop="12dp"
+        android:ems="6"
+        android:hint="@string/hintBmi"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tytul" />
 
+    <Button
+        android:id="@+id/co_zjesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/co_zjesc"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi" />
+
+    <TextView
+        android:id="@+id/potrawa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/co_zjesc" />
+
     <ListView
         android:id="@+id/produkty"
-        android:layout_width="350dp"
-        android:layout_height="250dp"
+        android:layout_width="364dp"
+        android:layout_height="97dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/przepis"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gofry"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/potrawa" />
 
     <TextView
         android:id="@+id/przepis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="379dp"
+        android:layout_height="293dp"
         android:layout_below="@+id/produkty"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:text="@string/przepis"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gofry"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintTop_toBottomOf="@+id/produkty"
+        app:layout_constraintVertical_bias="0.541" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

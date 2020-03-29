@@ -72,7 +72,7 @@ public class BmiFragment extends Fragment {
             wynikBMI = "Otyłość III stopnia";
         }
 
-        String obliczenia = "Wynik:\n\n" + bmi + "\n" + wynikBMI;
+        String obliczenia = bmi + "\n" + wynikBMI;
 
         wynik.setText(obliczenia);
     }
