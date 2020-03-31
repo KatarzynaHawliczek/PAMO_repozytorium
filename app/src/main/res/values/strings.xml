@@ -1,10 +1,11 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">Kalkulator BMI</string>
 
 <string name="tytulBmi">Kalkulator BMI</string>
 <string name="tytulCalories">Dzienne zapotrzebowanie kaloryczne</string>
 <string name="tytulFood">Co jeść w czasach koronawirusa?</string>
 <string name="tytulQuiz">Quiz</string>
+<string name="tytulStatistics">Statystyki zachorowań</string>
 
 <string name="potrawa1">Pancakes z nutellą!!!</string>
 <string name="przepis1">Do miski wsyp mąkę, proszek do pieczenia, a także dodaj jajko, mleko, cukier puder i olej. Zmiksuj wszystkie składniki przez
@@ -91,6 +92,7 @@
 <string name="navKalorie">Kalorie</string>
 <string name="navPrzepis">Przepis</string>
 <string name="navQuiz">Quiz</string>
+<string name="navStatystyki">Statystyki zachorowań</string>
 
 <string name="pyt1">Jakim kodem oznaczany jest koronawirus?</string>
 <string name="pyt2">Jak nazywa się choroba, wywoływana przez koronawirusa?</string>

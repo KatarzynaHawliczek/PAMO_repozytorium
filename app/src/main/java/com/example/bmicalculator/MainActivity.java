@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -32,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
                     Fragment selectedFragment = null;
 
                     switch (item.getItemId()) {
-                        case R.id.startNav:
-                            selectedFragment = new StartFragment();
-                            break;
                         case R.id.bmiNav:
                             selectedFragment = new BmiFragment();
                             break;
@@ -46,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                             break;
                         case R.id.quizNav:
                             selectedFragment = new QuizFragment();
+                            break;
+                        case R.id.statNav:
+                            selectedFragment = new StatisticFragment();
                     }
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
