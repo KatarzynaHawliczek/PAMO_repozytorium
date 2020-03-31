@@ -211,7 +211,7 @@ public class QuizFragment extends Fragment {
             odpC.setVisibility(View.INVISIBLE);
             odpD.setVisibility(View.INVISIBLE);
             punkty.setVisibility(View.INVISIBLE);
-            punkty.setText("0");
+            punkty.setText(R.string.zero);
             punktyTxt.setVisibility(View.INVISIBLE);
             licznik.setVisibility(View.INVISIBLE);
             licznikTxt.setVisibility(View.INVISIBLE);
