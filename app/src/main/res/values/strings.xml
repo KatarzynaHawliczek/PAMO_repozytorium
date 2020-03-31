@@ -4,6 +4,7 @@
 <string name="tytulBmi">Kalkulator BMI</string>
 <string name="tytulCalories">Dzienne zapotrzebowanie kaloryczne</string>
 <string name="tytulFood">Co jeść w czasach koronawirusa?</string>
+<string name="tytulQuiz">Quiz</string>
 
 <string name="potrawa1">Pancakes z nutellą!!!</string>
 <string name="przepis1">Do miski wsyp mąkę, proszek do pieczenia, a także dodaj jajko, mleko, cukier puder i olej. Zmiksuj wszystkie składniki przez
@@ -71,19 +72,78 @@
 <string name="obliczBmi">Oblicz BMI</string>
 <string name="obliczCalories">Oblicz PPM</string>
 <string name="co_zjesc">Co zjeść?</string>
-<string name="wynik">Wynik</string>
+<string name="wynik">Wynik:</string>
 <string name="hintWaga">Twoja waga</string>
 <string name="hintWzrost">Twój wzrost</string>
 <string name="hintWiek">Twój wiek</string>
 <string name="hintBmi">Twoje BMI</string>
 <string name="uwaga">Podaj swoje BMI</string>
+<string name="pytanie">Pytanie:</string>
+<string name="punkty">0</string>
+<string name="licznik">1 z 9</string>
+<string name="koniec">Jeszcze raz!!!</string>
 
 <string name="fragStart">Witaj w mojej apce!!!</string>
-<string name="fragKalorie">Kalorie</string>
-<string name="fragPrzepis">Przepis</string>
 
 <string name="navStart">Start</string>
 <string name="navBmi">BMI</string>
 <string name="navKalorie">Kalorie</string>
 <string name="navPrzepis">Przepis</string>
+<string name="navQuiz">Quiz</string>
+
+<string name="pyt1">Jakim kodem oznaczany jest koronawirus?</string>
+<string name="pyt2">Jak nazywa się choroba, wywoływana przez koronawirusa?</string>
+<string name="pyt3">Jakie objawy może mieć zakażona koronawirusem osoba?</string>
+<string name="pyt4">Skąd nazwa "koronawirus"?</string>
+<string name="pyt5">Gdzie odnotowano pierwsze przypadki zachorowań?</string>
+<string name="pyt6">Ciężka postać COVID-19 to...</string>
+<string name="pyt7">Jak przenoszony jest koronawirus?</string>
+<string name="pyt8">Czy jest już szczepionka na koronawirusa?</string>
+<string name="pyt9">Czy koronawirus jest groźny również dla zwierząt?</string>
+
+<string name="odp1A">COVID-19</string>
+<string name="odp1B">AH1N1</string>
+<string name="odp1C">SARS-CoV-2 (2019-nCoV)</string>
+<string name="odp1D">EBOV</string>
+
+<string name="odp2A">ŚWIŃSKA GRYPA</string>
+<string name="odp2B">SARS</string>
+<string name="odp2C">EBOLA</string>
+<string name="odp2D">COVID-19</string>
+
+<string name="odp3A">GORĄCZKA, KASZEL, DUSZNOŚCI, BÓL MIĘŚNI, ZMĘCZENIE</string>
+<string name="odp3B">KATAR, KASZEL, GORĄCZKA</string>
+<string name="odp3C">BÓLE GŁOWY, ZMĘCZENIE, BIEGUNKA</string>
+<string name="odp3D">CHOROBA PRZEBIEGA WYŁĄCZNIE BEZOBJAWOWO</string>
+
+<string name="odp4A">OD CHOROBY, KTÓRĄ WYWOŁUJE</string>
+<string name="odp4B">JEST TO KORONNY WIRUS TEJ ERY</string>
+<string name="odp4C">OD JEGO OTOCZKI BIAŁKOWEJ Z WYPUSTKAMI</string>
+<string name="odp4D">OD UCISKOWEGO BÓLU GŁOWY, KTÓRY JEST JEJ OBJAWEM</string>
+
+<string name="odp5A">PEKIN</string>
+<string name="odp5B">WUHAN</string>
+<string name="odp5C">BERGAMO</string>
+<string name="odp5D">WENECJA</string>
+
+<string name="odp6A">ŚPIĄCZKA KRWOTOCZNA</string>
+<string name="odp6B">GRYPA</string>
+<string name="odp6C">ZAPALENIE PŁUC I NIEWYDOLNOŚĆ ODDECHOWA</string>
+<string name="odp6D">PORAŻENIE MÓZGOWE</string>
+
+<string name="odp7A">DROGĄ KROPELKOWĄ</string>
+<string name="odp7B">DROGĄ FEKALNO-ORALNĄ</string>
+<string name="odp7C">DROGĄ PŁCIOWĄ</string>
+<string name="odp7D">DROGĄ POKARMOWĄ</string>
+
+<string name="odp8A">NIE I JEJ NIE BĘDZIE</string>
+<string name="odp8B">TAK, ALE BĘDZIE DOPIERO TESTOWANA</string>
+<string name="odp8C">NIE, JESZCZE JEJ NIE WYNALEZIONO</string>
+<string name="odp8D">TAK I JEST JUŻ PODAWANA</string>
+
+<string name="odp9A">TAK, CHORUJĄ ZWIERZĘTA DOMOWE</string>
+<string name="odp9B">OBECNIE U KILKUDZIESIĘCIU ZWIERZĄT TRWAJĄ TESTY</string>
+<string name="odp9C">KORONAWIRUS NIE JEST GROŹNY DLA NIKOGO</string>
+<string name="odp9D">NIE, CHORUJĄ TYLKO LUDZIE</string>
+
 </resources>

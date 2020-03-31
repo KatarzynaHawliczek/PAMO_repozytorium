@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.foodNav:
                             selectedFragment = new FoodFragment();
                             break;
+                        case R.id.quizNav:
+                            selectedFragment = new QuizFragment();
                     }
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

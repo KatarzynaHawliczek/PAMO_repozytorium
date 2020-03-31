@@ -16,9 +16,15 @@
         android:id="@+id/caloriesNav"
         android:icon="@drawable/ic_calories_black_24dp"
         android:title="@string/navKalorie" />
+
     <item
         android:id="@+id/foodNav"
         android:icon="@drawable/ic_food_black_24dp"
         android:title="@string/navPrzepis"/>
+
+    <item
+        android:id="@+id/quizNav"
+        android:icon="@drawable/ic_quiz_black_24dp"
+        android:title="@string/navQuiz"/>
 
 </menu>
