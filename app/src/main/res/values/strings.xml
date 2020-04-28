@@ -22,7 +22,7 @@
     <item>- 0,25 szklanki oleju</item>
     <item>- 3 łyżki cukru pudru</item>
     <item>- 1 łyżka proszku do pieczenia</item>
-    <item>- 6 łyżeczel nutelli</item>
+    <item>- 6 łyżeczek nutelli</item>
 </string-array>
 
 <string name="potrawa2">Gofry!!!</string>
@@ -84,6 +84,8 @@
 <string name="licznik">1 z 9</string>
 <string name="koniec">Jeszcze raz!!!</string>
 <string name="zero">0</string>
+<string name="podaj_waga_wzrost">Podaj swoją wagę i wzrost</string>
+<string name="podaj_waga_wzrost_wiek">Podaj swoją wagę, wzrost i wiek</string>
 
 <string name="fragStart">Witaj w mojej apce!!!</string>
 

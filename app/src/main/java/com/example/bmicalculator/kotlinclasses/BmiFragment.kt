@@ -5,24 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.bmicalculator.R
 import kotlin.math.roundToInt
+import kotlinx.android.synthetic.main.fragment_bmi.*
 
 class BmiFragment : Fragment() {
-
-    private var waga: EditText? = null
-    private var wzrost: EditText? = null
-    private var wynik: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_bmi, container, false)
-        waga = view.findViewById(R.id.waga)
-        wzrost = view.findViewById(R.id.wzrost)
-        wynik = view.findViewById(R.id.wynik)
         val oblicz = view.findViewById<Button>(R.id.oblicz)
         oblicz.setOnClickListener { obliczBMI() }
 
@@ -31,13 +23,17 @@ class BmiFragment : Fragment() {
 
     private fun obliczBMI() {
 
-        val S1 = waga!!.text.toString()
-        val S2 = wzrost!!.text.toString()
-        val wagaValue = S1.toFloat()
-        val wzrostValue = S2.toFloat() / 100
-        var bmi = wagaValue / (wzrostValue * wzrostValue)
-        bmi = bmi.roundToInt().toFloat()
-        printBMI(bmi)
+        if(waga.text.isNullOrEmpty() || wzrost.text.isNullOrEmpty()) {
+            wynik!!.text = getString(R.string.podaj_waga_wzrost)
+        } else {
+            val S1 = waga!!.text.toString()
+            val S2 = wzrost!!.text.toString()
+            val wagaValue = S1.toFloat()
+            val wzrostValue = S2.toFloat() / 100
+            var bmi = wagaValue / (wzrostValue * wzrostValue)
+            bmi = bmi.roundToInt().toFloat()
+            printBMI(bmi)
+        }
     }
 
     private fun printBMI(bmi: Float) {

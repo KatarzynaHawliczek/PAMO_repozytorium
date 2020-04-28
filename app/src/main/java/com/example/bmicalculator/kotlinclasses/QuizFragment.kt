@@ -5,17 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.bmicalculator.R
+import kotlinx.android.synthetic.main.fragment_quiz.*
 
 class QuizFragment : Fragment() {
 
-    private var licznik: TextView? = null
-    private var punkty: TextView? = null
-    private var licznikTxt: TextView? = null
-    private var punktyTxt: TextView? = null
-    private var tresc: TextView? = null
     private var pytania = arrayOfNulls<Pytanie>(9)
     private var odpA: Button? = null
     private var odpB: Button? = null
@@ -40,11 +35,6 @@ class QuizFragment : Fragment() {
         odpC?.run { setOnClickListener(buttonListener) }
         odpD = view.findViewById(R.id.odpD)
         odpD?.run { setOnClickListener(buttonListener) }
-        tresc = view.findViewById(R.id.tresc)
-        punkty = view.findViewById(R.id.punkty)
-        licznik = view.findViewById(R.id.licznik)
-        punktyTxt = view.findViewById(R.id.punktyTxt)
-        licznikTxt = view.findViewById(R.id.licznikTxt)
 
         wczytajQuiz()
         wczytajPytanie()

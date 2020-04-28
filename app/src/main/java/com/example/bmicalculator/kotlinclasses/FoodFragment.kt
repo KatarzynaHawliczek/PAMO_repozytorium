@@ -7,25 +7,14 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.bmicalculator.R
-
+import kotlinx.android.synthetic.main.fragment_food.*
 
 class FoodFragment : Fragment() {
-
-    private var bmi: EditText? = null
-    private var produkty: ListView? = null
-    private var potrawa: TextView? = null
-    private var przepis: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_food, container, false)
-
-        bmi = view.findViewById(R.id.bmi)
         val co_zjesc = view.findViewById<Button>(R.id.co_zjesc)
-        potrawa = view.findViewById(R.id.potrawa)
-        przepis = view.findViewById(R.id.przepis)
-        produkty = view.findViewById(R.id.produkty)
-
         co_zjesc.setOnClickListener { pokazPrzepis() }
 
         return view

@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import com.example.bmicalculator.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

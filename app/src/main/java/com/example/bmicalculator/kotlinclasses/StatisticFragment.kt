@@ -8,7 +8,6 @@ import android.webkit.WebView
 import androidx.fragment.app.Fragment
 import com.example.bmicalculator.R
 
-
 class StatisticFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -30,9 +29,9 @@ class StatisticFragment : Fragment() {
                 + "      google.charts.setOnLoadCallback(drawChart);\n"
                 + "      function drawChart() {\n"
                 + "        var data = google.visualization.arrayToDataTable([\n"
-                + "          ['Państwo', 'Zachorowania', 'Zgony', 'Wyleczenia'],\n"
+                + "          ['Panstwo', 'Zachorowania', 'Zgony', 'Wyleczenia'],\n"
                 + "          ['USA', 180271, 3573, 6241],\n"
-                + "          ['Włochy', 105792, 12428, 15729],\n"
+                + "          ['Wlochy', 105792, 12428, 15729],\n"
                 + "          ['Hiszpania', 94417, 8269, 19259],\n"
                 + "          ['Chiny', 81518, 3305, 76052],\n"
                 + "          ['Niemcy', 68180, 682, 15824],\n"
